@@ -19,18 +19,12 @@ export default function Home() {
       </h1>
 
       {!loggedIn && (
-        <div className="mb-6 space-x-4">
+        <div className="mb-6">
           <Link
             href="/login"
             className="text-indigo-400 hover:underline text-sm"
           >
             Login
-          </Link>
-          <Link
-            href="/register"
-            className="text-indigo-400 hover:underline text-sm"
-          >
-            Register
           </Link>
         </div>
       )}
