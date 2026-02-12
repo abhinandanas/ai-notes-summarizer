@@ -1,4 +1,9 @@
+"use client";
+import useNotesStore from "../../store/notesStore";
+
 export default function Summary() {
+  const summary = useNotesStore((state) => state.summary);
+
   return (
     <div className="max-w-3xl mx-auto mt-10">
       <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl">
@@ -6,10 +11,8 @@ export default function Summary() {
           Notes Summary
         </h2>
 
-        <p className="text-gray-300 leading-relaxed">
-          This is where the AI-generated summary will appear.
-          Key concepts, important formulas, and main ideas
-          will be displayed clearly for quick revision.
+        <p className="text-gray-300 leading-relaxed whitespace-pre-wrap">
+          {summary || "No summary generated yet. Upload notes to get started."}
         </p>
       </div>
     </div>

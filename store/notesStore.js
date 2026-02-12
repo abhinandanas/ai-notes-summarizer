@@ -6,6 +6,8 @@ const useNotesStore = create((set) => ({
   flashcards: [],
 
   setFile: (name) => set({ fileName: name }),
+  setSummary: (text) => set({ summary: text }),
+  setFlashcards: (cards) => set({ flashcards: cards }),
 
   generateSummary: (name) =>
     set({
