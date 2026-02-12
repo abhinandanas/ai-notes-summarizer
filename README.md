@@ -47,8 +47,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Contributors
 
-- **Pallavi** - Firebase Authentication, Gemini AI Integration, API Implementation
-  - Added login/register functionality
-  - Integrated Google Gemini 2.5 Flash API for summary generation
-  - Implemented authentication store with Zustand
-  - Fixed API configuration and model selection
+### Abhinandana
+- Created upload page functionality
+- Designed layout and global CSS styling
+- Developed flashcard components
+
+### Rashmi
+- Implemented login and register functionality
+- Integrated Firebase Authentication
+
+### Pallavi
+- Integrated Google Gemini 2.5 Flash API for summary generation
+- Implemented API configuration and model selection
+- Fixed API integration issues
