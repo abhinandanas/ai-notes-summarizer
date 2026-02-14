@@ -5,9 +5,9 @@ export default function Summary() {
   const summary = useNotesStore((state) => state.summary);
 
   return (
-    <div className="max-w-3xl mx-auto mt-10">
-      <div className="bg-white/10 backdrop-blur-md p-8 rounded-xl">
-        <h2 className="text-2xl font-bold mb-4">
+    <div className="max-w-3xl mx-auto mt-10 px-4">
+      <div className="bg-white/10 backdrop-blur-md p-6 sm:p-8 rounded-xl">
+        <h2 className="text-xl sm:text-2xl font-bold mb-4">
           Notes Summary
         </h2>
 

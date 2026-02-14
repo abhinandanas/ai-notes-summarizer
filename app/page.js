@@ -20,15 +20,19 @@ export default function Home() {
   }, [router]);
 
   return (
-    <div className="mt-16 text-center">
-      <h1 className="text-4xl font-bold mb-6">
+    <div className="min-h-screen px-4 sm:px-6 md:px-10 lg:px-16 py-10 sm:py-14">
+
+      {/* Heading */}
+      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-12">
         Study Smarter with AI
       </h1>
 
-      <div className="grid md:grid-cols-3 gap-6 mt-10">
+      {/* Cards Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 max-w-6xl mx-auto">
 
-        <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
-          <h3 className="text-xl font-semibold mb-3">
+        {/* Card 1 */}
+        <div className="bg-white/10 backdrop-blur-md p-5 sm:p-6 rounded-xl transition duration-300 hover:scale-[1.03] active:scale-100">
+          <h3 className="text-lg sm:text-xl font-semibold mb-3">
             Upload Notes
           </h3>
           <p className="text-gray-300 text-sm mb-4">
@@ -42,8 +46,9 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
-          <h3 className="text-xl font-semibold mb-3">
+        {/* Card 2 */}
+        <div className="bg-white/10 backdrop-blur-md p-5 sm:p-6 rounded-xl transition duration-300 hover:scale-[1.03] active:scale-100">
+          <h3 className="text-lg sm:text-xl font-semibold mb-3">
             View Summary
           </h3>
           <p className="text-gray-300 text-sm mb-4">
@@ -57,8 +62,9 @@ export default function Home() {
           </Link>
         </div>
 
-        <div className="bg-white/10 backdrop-blur-md p-6 rounded-xl">
-          <h3 className="text-xl font-semibold mb-3">
+        {/* Card 3 */}
+        <div className="bg-white/10 backdrop-blur-md p-5 sm:p-6 rounded-xl transition duration-300 hover:scale-[1.03] active:scale-100">
+          <h3 className="text-lg sm:text-xl font-semibold mb-3">
             Study Planner
           </h3>
           <p className="text-gray-300 text-sm mb-4">
