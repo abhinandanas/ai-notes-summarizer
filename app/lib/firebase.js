@@ -8,14 +8,15 @@ import { getFirestore } from "firebase/firestore";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBYnjziDxZWr5AZMWB5Q3JBeoWfUDuU1ao",
+  apiKey: "AIzaSyB0wlN8c8FbPpMMX9VmuiiuHHKzEwsbZCs",
   authDomain: "ai-notes-aca55.firebaseapp.com",
   projectId: "ai-notes-aca55",
   storageBucket: "ai-notes-aca55.firebasestorage.app",
   messagingSenderId: "765628456253",
-  appId: "1:765628456253:web:be7bfb0063f05d23f63954",
-  measurementId: "G-SXV1JJ0NZN"
+  appId: "1:765628456253:web:3ea5b1418c6312e6f63954",
+  measurementId: "G-86NTB1S6JC"
 };
+
 
 const app = initializeApp(firebaseConfig);
 
