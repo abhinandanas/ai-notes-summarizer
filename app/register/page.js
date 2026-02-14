@@ -24,7 +24,7 @@ export default function RegisterPage() {
 
     try {
       await register(email, password);
-      router.push("/home"); // redirect after register
+      router.push("/"); // redirect after register
     } catch (err) {
       setError(err.message || "Registration failed");
     }
