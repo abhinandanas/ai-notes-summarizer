@@ -49,9 +49,9 @@ export default function Planner() {
           onChange={(e) => setDay(e.target.value)}
           className="w-full p-3 mb-3 rounded bg-white/20 outline-none text-sm sm:text-base"
         >
-          <option value="">Select Day</option>
+          <option value="" className="bg-purple-800 text-white">Select Day</option>
           {days.map((d) => (
-            <option key={d} value={d}>
+            <option key={d} value={d} className="bg-purple-800 text-white">
               {d}
             </option>
           ))}
