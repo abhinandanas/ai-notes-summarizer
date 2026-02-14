@@ -1,39 +1,29 @@
 "use client";
+
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { auth } from "./lib/firebase";
+import { onAuthStateChanged } from "firebase/auth";
 
 export default function Home() {
-  const [loggedIn, setLoggedIn] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
-    const status = localStorage.getItem("isLoggedIn");
-    if (status === "true") {
-      setLoggedIn(true);
-    }
-  }, []);
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (!user) {
+        router.push("/login");
+      }
+    });
+
+    return () => unsubscribe();
+  }, [router]);
 
   return (
     <div className="mt-16 text-center">
       <h1 className="text-4xl font-bold mb-6">
         Study Smarter with AI
       </h1>
-
-      {!loggedIn && (
-        <div className="mb-6 space-x-4">
-          <Link
-            href="/login"
-            className="text-indigo-400 hover:underline text-sm"
-          >
-            Login
-          </Link>
-          <Link
-            href="/register"
-            className="text-indigo-400 hover:underline text-sm"
-          >
-            Register
-          </Link>
-        </div>
-      )}
 
       <div className="grid md:grid-cols-3 gap-6 mt-10">
 
